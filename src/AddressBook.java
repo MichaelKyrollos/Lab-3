@@ -17,7 +17,14 @@ public class AddressBook {
         }
         }
 
+    public ArrayList<BuddyInfo> displayAddressBook() {
+        return buddyInfos;
+    }
         public static void main(String[] args) {
+            BuddyInfo buddy= new BuddyInfo("tom", "Carleton Street", "613");
+            AddressBook addressBook = new AddressBook();
+            addressBook.addBuddy(buddy);
+            addressBook.removeBuddy(0);
             System.out.println("Address Book");
-        }
+    }
 }
