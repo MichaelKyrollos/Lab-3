@@ -1,9 +1,10 @@
 import java.util.ArrayList;
-import java.util.ListIterator;
 
 public class AddressBook {
-    private ArrayList<BuddyInfo> buddyInfo;
-
+    private ArrayList<BuddyInfo> buddyInfos;
+    public AddressBook() {
+        buddyInfos = new ArrayList<BuddyInfo>();
+    }
     public void addBuddy(BuddyInfo aBuddyInfos) {
         if (buddyInfos != null) {
             buddyInfos.add(aBuddyInfos);
